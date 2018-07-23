@@ -7,6 +7,9 @@ var notes=[];
 bot.on('message', msg=>{
 	bot.sendMessage(msg.chat.id, `Hello ${msg.from.first_name}, your id ${msg.from.id}`);
 })
+bot.onText('/hello', msg=>{
+	bot.sendMessage(`Helloooo`);
+})
 /* bot.onText(/напомни (.+) в (.+)/,function(msg,match){
 	var userId=msg.from.id;
 	var text=match[1];
