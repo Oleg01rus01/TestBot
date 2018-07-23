@@ -1,5 +1,5 @@
 {
-  "name": "testbot",
+  "name": "testbots",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,9 +9,6 @@
   "devDependencies": {},
   "scripts": {
     "start": "node index.js"
-  },
-  "engines":{
-	"node": "8.9.1"
   },
   "author": "",
   "license": "ISC"
