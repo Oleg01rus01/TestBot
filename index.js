@@ -2,14 +2,10 @@ var TelegramBot = require('node-telegram-bot-api');
 const token = '644425603:AAFsR-MIvFsv1hKGM8CVZe1YQSDpTW83LUY';
 var bot = new TelegramBot(token, {polling: true});
 var notes = [];
-var bot=new TelegramBot(token,{polling:true});
-var notes=[];
 bot.on('message', msg=>{
 	bot.sendMessage(msg.chat.id, `Hello ${msg.from.first_name}, your id ${msg.from.id}`);
 })
-bot.on('hello', msg=>{
-	bot.sendMessage(`Helloooo`);
-})
+
 /* bot.onText(/напомни (.+) в (.+)/,function(msg,match){
 	var userId=msg.from.id;
 	var text=match[1];
