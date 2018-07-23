@@ -5,7 +5,7 @@ const bot = new TelegramBot(TOKEN, {polling: true});
 bot.on('message', msg => {
 	bot.sendMessage(msg.chat.id, `Hello ${msg.from.first_name}, your id ${msg.from.id}`);
 });
-bot.on(/\/help/,  msg => {
+bot.on("/help", msg => {
 	bot.sendMessage(msg.chat.id, `Помощь не работает, тебе уже ничего не поможет.`);
 });
 /* bot.onText(/напомни (.+) в (.+)/,function(msg,match){
