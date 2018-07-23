@@ -5,7 +5,7 @@ var notes = [];
 var bot=new TelegramBot(token,{polling:true});
 var notes=[];
 bot.on('message', msg=>{
-	bot.sendMessage(msg.chat.id, `Hello ${msg.from.first_name}`);
+	bot.sendMessage(msg.chat.id, `Hello ${msg.from.first_name}, your id ${msg.from.id}`);
 })
 /* bot.onText(/напомни (.+) в (.+)/,function(msg,match){
 	var userId=msg.from.id;
