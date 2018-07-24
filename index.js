@@ -1,15 +1,15 @@
-var TelegramBot = require('node-telegram-bot-api');
-var token = '644425603:AAGpjo2C_iufCj5bGt-O3VdNKohqXlo_PsY';
-var bot = new TelegramBot(token, {polling: true});
-var notes = [];
-var bot=new TelegramBot(token,{polling:true});
-var notes=[];
-bot.on('message', msg=>{
+'use strict'
+
+const TelegramBot = require('node-telegram-bot-api');
+const TOKEN = '644425603:AAFsR-MIvFsv1hKGM8CVZe1YQSDpTW83LUY';
+const bot = new TelegramBot(TOKEN, {polling: true});
+//var notes = [];
+bot.on('message', msg => {
 	bot.sendMessage(msg.chat.id, `Hello ${msg.from.first_name}, your id ${msg.from.id}`);
-})
-bot.onText('/hello', msg=>{
-	bot.sendMessage(`Helloooo`);
-})
+});
+bot.on("/help", msg => {
+	bot.sendMessage(msg.chat.id, `Помощь не работает, тебе уже ничего не поможет.`);
+});
 /* bot.onText(/напомни (.+) в (.+)/,function(msg,match){
 	var userId=msg.from.id;
 	var text=match[1];

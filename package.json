@@ -1,7 +1,6 @@
 {
-  "name": "testbot",
+  "name": "testbots",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "node-telegram-bot-api": "^0.30.0"
@@ -10,9 +9,21 @@
   "scripts": {
     "start": "node index.js"
   },
-  "engines":{
-	"node": "8.9.1"
+  "keywords": [
+    "heroku"
+  ],
+  "author": "oleg-p",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oleg01rus01/TestBot.git"
   },
-  "author": "",
-  "license": "ISC"
+  "engines": {
+    "node": "8.9.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Oleg01rus01/TestBot/issues"
+  },
+  "homepage": "https://github.com/Oleg01rus01/TestBot#readme",
+  "description": ""
 }
